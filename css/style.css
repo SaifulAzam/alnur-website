@@ -13,12 +13,17 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.container {
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
 header {
-  top: 40px;
+  top: 0;
   left: 0;
-  position: absolute;
-  height: 50px;
-  width: 100%;
+  right: 0;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,18 +33,41 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1;
+  background-color: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #914ffc;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 header .login_btn {
-  padding: 16px 16px 16px 16px;
-  background-color: #e0ccf6;
+  padding: 10px;
+  background-color: #c7c4cb;
   width: 156px;
   border-radius: 100px;
   text-align: center;
   font-weight: 700;
   font-size: 16px;
   color: #6500d3;
+}
+
+header .logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 10px;
+}
+
+header img {
+  width: 54px;
+  height: 54px;
+}
+
+@media only screen and (max-width: 600px) {
+  header .logo {
+    display: block;
+  }
 }
 
 section {
@@ -54,6 +82,7 @@ section h1 {
   font-family: inherit;
   font-size: 48px;
   font-weight: 800;
+  text-align: center;
 }
 
 section .container {
@@ -78,6 +107,25 @@ section .title {
   text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+  section .title {
+    max-width: 100%;
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section .title {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  section .title {
+    width: 60%;
+  }
+}
+
 section .subtitle {
   color: #3d007f;
   font-weight: 400;
@@ -85,6 +133,13 @@ section .subtitle {
   text-align: center;
   width: 50%;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  section .subtitle {
+    width: 100%;
+    font-size: 18px;
+  }
 }
 
 section .app-btn {
@@ -136,18 +191,27 @@ section .app-banner img {
 
 .mission_section .title {
   color: #1ee592;
-  width: 45%;
+  width: 70%;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .mission_section .title {
+    max-width: 100%;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mission_section .title {
+    max-width: 100%;
+  }
 }
 
 .box-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -156,17 +220,26 @@ section .app-banner img {
           align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+  .box-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .card {
   width: 100%;
   padding: 30px;
   text-align: center;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
-  border-right: 1px solid lightgray;
+  border-top: 1px solid rgba(230, 230, 230, 0.591);
+  border-bottom: 1px solid rgba(230, 230, 230, 0.591);
+  border-right: 1px solid rgba(230, 230, 230, 0.591);
 }
 
 .card:hover {
-  background-color: #eeeded;
+  background-color: rgba(238, 237, 237, 0.187);
 }
 
 .card .subtitle {
@@ -199,6 +272,11 @@ section .app-banner img {
           box-sizing: border-box;
   border-radius: 100px;
   color: #6500d3;
+}
+
+.card .card-btn:hover {
+  background-color: #3d007f !important;
+  color: #fff;
 }
 
 .box {
@@ -237,21 +315,42 @@ section .app-banner img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 30px;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .box .team-box {
+    width: 100%;
+    display: block;
+  }
 }
 
 .box .team-box li {
   list-style: none;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  max-width: 100%;
+}
+
+.box .team-box li .container {
+  padding: 0 16px;
+}
+
+.box .team-box li .container::after,
+.box .team-box li .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.box .team-box li .title {
+  color: grey;
 }
 
 .box .team-box li figure {
@@ -288,11 +387,10 @@ section .app-banner img {
 }
 
 .btn {
-  position: relative;
   background-color: #3d007f;
   padding: 10px 20px 10px 20px;
   border-radius: 100px;
-  color: white;
+  color: #dedede;
   font-size: 18px;
   -webkit-transition: color 0.5s, -webkit-transform 0.2s;
   transition: color 0.5s, -webkit-transform 0.2s;
@@ -300,6 +398,13 @@ section .app-banner img {
   transition: color 0.5s, transform 0.2s, -webkit-transform 0.2s;
   outline: none;
   border: 3px solid transparent;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #3d007f84;
+  color: #fff;
 }
 
 .divider-top {
