@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: "914FFD";
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  top: 40px;
+  left: 0;
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+header .login_btn {
+  padding: 16px 16px 16px 16px;
+  background-color: #e0ccf6;
+  width: 156px;
+  border-radius: 100px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #6500d3;
+}
+
+section {
+  top: 0;
+  right: 0;
+  background-color: #914ffc;
+  width: 100%;
+  padding-top: 100px;
+}
+
+section h1 {
+  font-family: inherit;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .title {
+  color: #3d007f;
+  width: 45%;
+  text-align: center;
+}
+
+section .subtitle {
+  color: #3d007f;
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  width: 50%;
+  text-align: center;
+}
+
+section .app-btn {
+  padding: 30px;
+}
+
+section .app-banner {
+  padding-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .app-banner img {
+  width: 80%;
+}
+
+.mission_section {
+  height: 250px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mission_section .name {
+  font-weight: 800;
+  font-size: 14px;
+  color: #858e9d;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mission_section .title {
+  color: #1ee592;
+  width: 45%;
+  text-align: center;
+}
+
+.box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+.card:hover {
+  background-color: #eeeded;
+}
+
+.card .subtitle {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #858e9d;
+  text-align: center;
+}
+
+.card .title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #1c232d;
+  text-align: center;
+}
+
+.card .desc {
+  font-size: 17px;
+  font-weight: 400;
+  color: #858e9d;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.card .card-btn {
+  background-color: #f5f5f5 !important;
+  border: 1px solid #ebecf0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  color: #6500d3;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px;
+}
+
+.box .subtitle {
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #858e9d;
+  text-align: center;
+}
+
+.box .title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #1c232d;
+  text-align: center;
+}
+
+.box .team-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+}
+
+.box .team-box li {
+  list-style: none;
+}
+
+.box .team-box li figure {
+  width: 300px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.box .team-box li figure:hover,
+.box .team-box li span {
+  bottom: -36px;
+  opacity: 1;
+}
+
+.box .team-box li span {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  color: #444;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.btn {
+  position: relative;
+  background-color: #3d007f;
+  padding: 10px 20px 10px 20px;
+  border-radius: 100px;
+  color: white;
+  font-size: 18px;
+  -webkit-transition: color 0.5s, -webkit-transform 0.2s;
+  transition: color 0.5s, -webkit-transform 0.2s;
+  transition: color 0.5s, transform 0.2s;
+  transition: color 0.5s, transform 0.2s, -webkit-transform 0.2s;
+  outline: none;
+  border: 3px solid transparent;
+}
+
+.divider-top {
+  border-top: 1px solid lightgray;
+}
+
+.divider-bottom {
+  border-bottom: 1px solid lightgray;
+}
+
+.divider-right {
+  border-right: 1px solid lightgray;
+}
+
+.divider-left {
+  border-left: 1px solid lightgray;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */
