@@ -9,7 +9,7 @@ a {
 }
 
 body {
-  background-color: "914FFD";
+  background-color: "#914FFD";
   font-family: "Poppins", sans-serif;
 }
 
@@ -22,9 +22,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -32,27 +32,49 @@ header {
 }
 
 header .login_btn {
-  padding: 16px 16px 16px 16px;
-  background-color: #e0ccf6;
-  width: 156px;
+  padding: 8px 16px 8px 16px;
+  background-color: #fff;
   border-radius: 100px;
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
-  color: #6500d3;
+  color: #333;
+  border: 1px solid #eee;
+}
+
+header a {
+  position: fixed;
+  right: 32px;
+  border-radius: 100px;
+  padding: 0px;
+}
+
+header a marquee {
+  background-color: #e9fcf4;
+  border: 1px solid #d2fae9;
+  border-radius: 100px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  color: #18b775;
+}
+
+header a marquee:hover {
+  background-color: #18b775;
+  border: 1px solid #18b775;
+  color: #e9fcf4;
 }
 
 section {
   top: 0;
   right: 0;
-  background-color: #914ffc;
+  background-color: #59c384;
   width: 100%;
   padding-top: 100px;
 }
 
 section h1 {
   font-family: inherit;
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 800;
 }
 
@@ -72,27 +94,50 @@ section .container {
           align-items: center;
 }
 
+section .logo {
+  padding-bottom: 48px;
+}
+
 section .title {
-  color: #3d007f;
-  width: 45%;
+  color: #fff;
+  width: 50%;
   text-align: center;
+  line-height: 68px;
+  letter-spacing: -0.1rem;
+  padding-bottom: 16px;
 }
 
 section .subtitle {
-  color: #3d007f;
+  color: #fff;
   font-weight: 400;
   font-size: 22px;
   text-align: center;
   width: 50%;
   text-align: center;
+  opacity: 90%;
 }
 
 section .app-btn {
-  padding: 30px;
+  padding: 48px;
+}
+
+section .app-btn .btn {
+  position: relative;
+  padding: 0 10px 0 10px;
+  border-radius: 100px;
+  color: white;
+  font-size: 0px;
+  -webkit-transition: color 0.5s, -webkit-transform 0.2s;
+  transition: color 0.5s, -webkit-transform 0.2s;
+  transition: color 0.5s, transform 0.2s;
+  transition: color 0.5s, transform 0.2s, -webkit-transform 0.2s;
+  outline: none;
+  background-color: transparent;
 }
 
 section .app-banner {
-  padding-top: 32px;
+  padding-top: 64px;
+  padding-bottom: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,7 +154,7 @@ section .app-banner img {
 }
 
 .mission_section {
-  height: 250px;
+  height: 380px;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,12 +177,16 @@ section .app-banner img {
   color: #858e9d;
   text-align: center;
   text-transform: uppercase;
+  padding-bottom: 16px;
 }
 
 .mission_section .title {
   color: #1ee592;
-  width: 45%;
+  width: 50%;
   text-align: center;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -0.1rem;
 }
 
 .box-container {
@@ -158,15 +207,19 @@ section .app-banner img {
 
 .card {
   width: 100%;
-  padding: 30px;
+  padding: 95px;
   text-align: center;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
-  border-right: 1px solid lightgray;
+  border-top: 0.1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
 }
 
 .card:hover {
-  background-color: #eeeded;
+  background-color: #f8f8f8;
+}
+
+.card p {
+  padding-top: 8px;
 }
 
 .card .subtitle {
@@ -182,6 +235,7 @@ section .app-banner img {
   font-weight: 700;
   color: #1c232d;
   text-align: center;
+  letter-spacing: -0.1rem;
 }
 
 .card .desc {
@@ -193,12 +247,20 @@ section .app-banner img {
 }
 
 .card .card-btn {
-  background-color: #f5f5f5 !important;
-  border: 1px solid #ebecf0;
+  background-color: #efe5fa !important;
+  border: 1px solid #e0ccf6;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 100px;
   color: #6500d3;
+}
+
+.card .card-btn:hover {
+  background-color: #6500d3 !important;
+  border: 1px solid #6500d3;
+  color: #fff;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
 .box {
@@ -215,7 +277,7 @@ section .app-banner img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 50px;
+  padding-top: 80px;
 }
 
 .box .subtitle {
@@ -227,10 +289,27 @@ section .app-banner img {
 }
 
 .box .title {
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 700;
-  color: #1c232d;
+  color: #1ee592;
   text-align: center;
+}
+
+.box .social-box {
+  padding: 32px 32px;
+}
+
+.box .social-box a {
+  background: #ffffff;
+  /* Secondary/Fade II */
+  border: 1px solid #ebecf0;
+  border-radius: 100px;
+  color: #707989;
+}
+
+.box img {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .box .team-box {
@@ -247,7 +326,8 @@ section .app-banner img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 30px;
+  padding-top: 95px;
+  bottom: 0;
 }
 
 .box .team-box li {
@@ -256,7 +336,6 @@ section .app-banner img {
 
 .box .team-box li figure {
   width: 300px;
-  height: 200px;
   margin: 0;
   padding: 0;
   background: #fff;
