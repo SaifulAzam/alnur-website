@@ -166,6 +166,49 @@ section .app-banner img {
   width: 80%;
 }
 
+.early_signup {
+  height: 280px;
+  padding: 40px 90px 40px 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  background-image: url("../assets/images/confetti.png");
+}
+
+.early_signup p {
+  font-size: 22px;
+  line-height: 27px;
+  color: #000;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.early_signup .title {
+  color: #1ee592;
+  width: 50%;
+  text-align: left;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -0.1rem;
+}
+
+.early_signup .success_message {
+  color: #6500d3;
+  padding: 4px 12px 4px 12px;
+  font-size: 13px;
+  border-radius: 100px;
+  width: auto;
+}
+
 .mission_section {
   height: 380px;
   padding: 20px;
@@ -229,6 +272,8 @@ section .app-banner img {
 
 .card:hover {
   background-color: #f8f8f8;
+  -webkit-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
 }
 
 .card p {
@@ -432,5 +477,110 @@ section .app-banner img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.fineprint {
+  font-size: 12px;
+  color: #ccc;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.fineprint a {
+  color: #ccc;
+}
+
+.fineprint a:hover {
+  text-decoration: underline;
+  color: #858e9d;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+form input,
+form input[type="text"],
+form select {
+  width: 100%;
+  padding: 12px 24px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  outline: none;
+}
+
+form input[type="submit"] {
+  width: 140px;
+  background-color: #efe5fa !important;
+  color: #6500d3;
+  padding: 10px 20px 10px 20px;
+  margin: 8px 20px;
+  border: 1px solid #e0ccf6;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #6500d3 !important;
+  border: 1px solid #6500d3;
+  color: #fff;
+  -webkit-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.1), 0 17px 50px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.1), 0 17px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Style from mosque page */
+.mosque_screen {
+  height: 280px;
+  padding: 40px 90px 40px 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+}
+
+/* mosque page form */
+.mosque_signup {
+  margin: 20px 20px;
+  padding: 48px 48px;
+  border-radius: 40px;
+  width: 375px;
+  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.05), 0 12px 12px 0 rgba(0, 0, 0, 0.01);
+          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.05), 0 12px 12px 0 rgba(0, 0, 0, 0.01);
+}
+
+.mosque_signup form {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+/* All the screen re-sized*/
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 100% !important;
+  }
+  .container h1 {
+    width: 60% !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

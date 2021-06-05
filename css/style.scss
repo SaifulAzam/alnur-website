@@ -143,6 +143,42 @@ section {
   }
 }
 
+.early_signup {
+  height: 280px;
+  padding: 40px 90px 40px 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  background-image: url("../assets/images/confetti.png");
+
+  p {
+    font-size: 22px;
+    line-height: 27px;
+    color: #000;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+
+  .title {
+    color: #1ee592;
+    width: 50%;
+    text-align: left;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.1rem;
+  }
+
+  .success_message {
+    color: #6500d3;
+    padding: 4px 12px 4px 12px;
+    font-size: 13px;
+    border-radius: 100px;
+    width: auto;
+  }
+}
+
 .mission_section {
   height: 380px;
   padding: 20px;
@@ -191,6 +227,7 @@ section {
 
   &:hover {
     background-color: rgb(248, 248, 248);
+    transition: all 250ms ease-out;
   }
 
   p {
@@ -375,4 +412,96 @@ section {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.fineprint {
+  font-size: 12px;
+  color: #ccc;
+  display: flex !important;
+
+  a {
+    color: #ccc;
+
+    &:hover {
+      text-decoration: underline;
+      color: #858e9d;
+    }
+  }
+}
+
+form {
+  display: flex;
+  width: 100%;
+
+  input,
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 12px 24px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    box-sizing: border-box;
+    font-size: 18px;
+    outline: none;
+  }
+
+  input[type="submit"] {
+    width: 140px;
+    background-color: #efe5fa !important;
+    color: #6500d3;
+    padding: 10px 20px 10px 20px;
+    margin: 8px 20px;
+    border: 1px solid #e0ccf6;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #6500d3 !important;
+    border: 1px solid #6500d3;
+    color: #fff;
+    transition: all 250ms ease-out;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.1),
+      0 17px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Style from mosque page */
+
+.mosque_screen {
+  height: 280px;
+  padding: 40px 90px 40px 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+
+/* mosque page form */
+.mosque_signup {
+  margin: 20px 20px;
+  padding: 48px 48px;
+  border-radius: 40px;
+  width: 375px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.05),
+    0 12px 12px 0 rgba(0, 0, 0, 0.01);
+
+  form {
+    flex-direction: column !important;
+  }
+}
+
+/* All the screen re-sized*/
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 100% !important;
+
+    h1 {
+      width: 60% !important;
+    }
+  }
 }
