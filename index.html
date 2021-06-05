@@ -14,7 +14,9 @@
 <body>
     <header>
         <p></p>
-       <a class="login-btn" href="#"><marquee behavior="scroll" direction="left" scrollamount="4">🕌 Portal Login</marquee></a>
+        <a class="login-btn" href="#">
+            <marquee behavior="scroll" direction="left" scrollamount="4">🕌 Portal Login</marquee>
+        </a>
     </header>
     <section>
         <div class="container">
@@ -33,33 +35,43 @@
             </div>
 
             <h1 class="title">Community Platform for Muslims</h1>
-            <p class="subtitle">Alnur is a Muslim community platform for people around the world to connect, share, discover, build community, and connect with their local mosques.</p>
+            <p class="subtitle">Alnur is a Muslim community platform for people around the world to connect, share,
+                discover, build community, and connect with their local mosques.</p>
             <div class="app-btn">
-                <a class="btn" href="#"><img src="./assets/images/ios.svg" onmouseover="this.src='./assets/images/ios-hover.svg';" onmouseout="this.src='./assets/images/ios.svg';"/></a>
-                <a class="btn" href="#"><img src="./assets/images/android.svg"  onmouseover="this.src='./assets/images/android-hover.svg';" onmouseout="this.src='./assets/images/android.svg';"/></a>
+                <a class="btn" href="#"><img src="./assets/images/ios.svg"
+                        onmouseover="this.src='./assets/images/ios-hover.svg';"
+                        onmouseout="this.src='./assets/images/ios.svg';" /></a>
+                <a class="btn" href="#"><img src="./assets/images/android.svg"
+                        onmouseover="this.src='./assets/images/android-hover.svg';"
+                        onmouseout="this.src='./assets/images/android.svg';" /></a>
             </div>
 
             <div class="app-banner">
-                <img src="./assets/images/app_screen.png" />
+                <img src="https://alnurapp.com/assets/img/img-8.png" />
             </div>
-        </div>    
+        </div>
     </section>
 
     <div class="early_signup">
         <p class="name">🔔 Be the first to be notified when we launch.</p>
-            <form method="post" action="mailto:email@example.com" >
-                <input type="email" name="Enter your email" size="100%" placeholder="Enter your email address..." maxlength="150" required />
-                <input type="submit" value="Get notified" />
-            </form>
-            <p class="success_message">Thank you for interest!</p>
+        <form id="newsletter-form" name="newsletter-form">
+            <input type="email" id="email_address" name="email_address" size="100%"
+                placeholder="Enter your email address..." maxlength="150" required />
+            <input type="submit" class="newsletter" value="Get notified" />
+        </form>
+
+        <p class="success_message">
+        <div id="snackbar"></div>
+        </p>
     </div>
 
 
     <div class="mission_section">
         <p class="name">Mission</p>
-        <h1 class="title">We are on a mission to help muslim community connect with technology for free or as close to free as possible.</h1>
+        <h1 class="title">We are on a mission to help muslim community connect with technology for free or as close to
+            free as possible.</h1>
     </div>
-    
+
     <div class="box-container">
         <div class="card">
             <b class="subtitle">For Mosque</b>
@@ -85,40 +97,65 @@
             <a href="http://facebook.com/teamalnur" class="fa fa-facebook" target="_self"></a>
             <a href="https://twitter.com/teamalnur" class="fa fa-twitter" target="_self"></a>
             <a href="https://instagram.com/teamalnur" class="fa fa-instagram" target="_self"></a>
-            <a href="https://www.linkedin.com/company/teamalnur" class="fa fa-linkedin"target="_self"></a>
+            <a href="https://www.linkedin.com/company/teamalnur" class="fa fa-linkedin" target="_self"></a>
         </div>
 
         <div class="fineprint">
-            <div class="copyright"><p> © 2021 SAFT LLC. <a href=""> Terms & Privacy </a></p> </div>
+            <div class="copyright">
+                <p> © 2021 SAFT LLC. <a href=""> Terms & Privacy </a></p>
+            </div>
 
         </div>
-        
+
         <div class="team-box">
-            <li>
-                <span>Hover</span>
-                <figure>
-                    <img class="image" src="./assets/images/foysol.png" />
-                </figure>
-            </li>
-            <li>
-                <span>Hover</span>
-                <figure>
-                    <img class="image" src="./assets/images/foysol.png" />
-                </figure>
-            </li>
-            <li>
-                <span>Hover</span>
-                <figure>
-                    <img class="image" src="./assets/images/foysol.png" />
-                </figure>
-            </li>
-            <li>
-                <span>Hover</span>
-                <figure>
-                    <img class="image" src="./assets/images/foysol.png" />
-                </figure>
-            </li>
+            <!-- person 1-->
+            <div class="person">
+                <div class="container tooltip">
+                    <span class="tooltiptext">Tooltip text</span>
+                    <div class="container-inner">
+                        <!-- <img class="circle" src="./assets/images/foysol.png" /> -->
+                        <img class="img img1" src="./assets/images/foysol-01.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="person">
+                <div class="container tooltip">
+                    <span class="tooltiptext">Tooltip text</span>
+                    <div class="container-inner">
+                        <!-- <img class="circle" src="./assets/images/foysol.png" /> -->
+                        <img class="img img1" src="./assets/images/foysol-01.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="person">
+                <div class="container tooltip">
+                    <span class="tooltiptext">Tooltip text</span>
+                    <div class="container-inner">
+                        <!-- <img class="circle" src="./assets/images/foysol.png" /> -->
+                        <img class="img img1" src="./assets/images/foysol-01.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="person">
+                <div class="container tooltip">
+                    <span class="tooltiptext">Tooltip text</span>
+                    <div class="container-inner">
+                        <!-- <img class="circle" src="./assets/images/foysol.png" /> -->
+                        <img class="img img1" src="./assets/images/foysol-01.png" />
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="./js/app.js"></script>
 </body>
+
 </html>
