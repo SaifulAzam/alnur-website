@@ -11,6 +11,9 @@
 
 html {
   scroll-behavior: smooth;
+  @media only (min-width: 0px) and (max-width: 299px) {
+    background: white;
+  }
 }
 
 a {
@@ -204,12 +207,33 @@ section {
     }
   }
 
-  .app-banner {
+  .app-banner-desktop {
     padding-top: 64px;
     padding-bottom: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media only (max-width: 940px) {
+      display: none !important;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .app-banner-mobile {
+    //padding-top: 24px;
+    //padding-bottom: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only (min-width: 939px) {
+      display: none !important;
+    }
+
     img {
       width: 100%;
     }
@@ -230,8 +254,12 @@ section {
     padding: 90px 90px 20px 90px;
   }
 
-  @media only (min-width: 300px) and (max-width: 375px) {
+  @media only (min-width: 375px) and (max-width: 939px) {
     padding: 60px 20px 10px 20px !important;
+  }
+
+  @media only (min-width: 300px) and (max-width: 374px) {
+    padding: 60px 30px 10px 20px !important;
   }
 
   p {
@@ -349,13 +377,21 @@ section {
       width: 70%;
       //padding: 90px 20px;
       font-size: 38px;
-      line-height: 40px;
+      line-height: 44px;
       //  height: 400px;
     }
 
-    @media only (min-width: 0px) and (max-width: 719px) {
-      font-size: 34px;
+    @media only (min-width: 375px) and (max-width: 719px) {
+      font-size: 38px;
+      line-height: 44px;
+      letter-spacing: -0.05rem;
+      width: 100%;
+    }
+
+    @media only (min-width: 0px) and (max-width: 374px) {
+      font-size: 30px;
       line-height: 36px;
+      letter-spacing: -0.05rem;
       width: 100%;
     }
   }
@@ -522,6 +558,7 @@ section {
         padding: 16px 16px;
         border: 0 !important;
         width: 16px;
+        margin: auto;
       }
     }
 
@@ -745,7 +782,7 @@ form {
 
   .saiful {
     padding: 25%;
-    background-image: url("../assets/images/foysol-01.png");
+    background-image: url("../assets/images/saiful-01.png");
     background-repeat: no-repeat;
     background-size: cover;
     transition: transform 0.01s;

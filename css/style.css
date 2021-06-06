@@ -8,6 +8,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (min-width: 0px) and (max-width: 299px) {
+  html {
+    background: white;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -233,7 +239,7 @@ section .app-btn .btn img:hover {
   cursor: progress;
 }
 
-section .app-banner {
+section .app-banner-desktop {
   padding-top: 64px;
   padding-bottom: 48px;
   display: -webkit-box;
@@ -247,7 +253,35 @@ section .app-banner {
           align-items: center;
 }
 
-section .app-banner img {
+@media (max-width: 940px) {
+  section .app-banner-desktop {
+    display: none !important;
+  }
+}
+
+section .app-banner-desktop img {
+  width: 100%;
+}
+
+section .app-banner-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 939px) {
+  section .app-banner-mobile {
+    display: none !important;
+  }
+}
+
+section .app-banner-mobile img {
   width: 100%;
 }
 
@@ -275,9 +309,15 @@ section .app-banner img {
   }
 }
 
-@media (min-width: 300px) and (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 939px) {
   .early_signup {
     padding: 60px 20px 10px 20px !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 374px) {
+  .early_signup {
+    padding: 60px 30px 10px 20px !important;
   }
 }
 
@@ -423,14 +463,24 @@ section .app-banner img {
   .mission_section .title {
     width: 70%;
     font-size: 38px;
-    line-height: 40px;
+    line-height: 44px;
   }
 }
 
-@media (min-width: 0px) and (max-width: 719px) {
+@media (min-width: 375px) and (max-width: 719px) {
   .mission_section .title {
-    font-size: 34px;
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: -0.05rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 374px) {
+  .mission_section .title {
+    font-size: 30px;
     line-height: 36px;
+    letter-spacing: -0.05rem;
     width: 100%;
   }
 }
@@ -639,6 +689,7 @@ section .app-banner img {
     padding: 16px 16px;
     border: 0 !important;
     width: 16px;
+    margin: auto;
   }
 }
 
@@ -902,7 +953,7 @@ form input[type="submit"]:hover {
 
 .teamCard .saiful {
   padding: 25%;
-  background-image: url("../assets/images/foysol-01.png");
+  background-image: url("../assets/images/saiful-01.png");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: -webkit-transform 0.01s;
