@@ -71,7 +71,7 @@ document.querySelector('.newsletter').addEventListener('click', function(event){
         })
 
         document.getElementById("newsletter-form").reset();
-        showSnackbar("Thank you for interest!")
+        showSnackbar("✅ Thank you for your interest!")
     } else {
         alert('Please fill all fields')
     }
