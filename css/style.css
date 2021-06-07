@@ -23,12 +23,43 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  height: 48px;
+  background-color: #e9fcf4;
+  border: 1px solid #d2fae9;
+}
+
+@media (min-width: 939px) {
+  footer {
+    display: none;
+  }
+}
+
+footer a {
+  padding: 0px;
+  width: 100%;
+  display: block;
+  height: 48px;
+  padding-top: 8px;
+  color: #000;
+}
+
+footer a:hover {
+  background-color: #18b775;
+  color: #fff;
+}
+
 header {
   top: 40px;
-  left: 0;
-  position: absolute;
+  position: fixed;
   height: 50px;
-  width: 100%;
+  width: 98%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,12 +69,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1;
+  z-index: 999;
 }
 
-@media (min-width: 0px) and (max-width: 1023px) {
+@media (max-width: 940px) {
   header {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -59,22 +90,16 @@ header .login_btn {
 }
 
 header a {
-  position: fixed;
-  right: 32px;
   border-radius: 100px;
   padding: 0px;
-}
-
-header a marquee {
   background-color: #e9fcf4;
   border: 1px solid #d2fae9;
   border-radius: 100px;
-  padding-top: 8px;
-  padding-bottom: 6px;
+  padding: 4px 12px 6px 12px;
   color: #000;
 }
 
-header a marquee:hover {
+header a:hover {
   background-color: #18b775;
   border: 1px solid #18b775;
   color: #e9fcf4;
