@@ -127,6 +127,12 @@ section {
 
   .logo {
     padding-bottom: 48px;
+    transition: all 350ms ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all 150ms ease-in;
+    }
   }
 
   .title {

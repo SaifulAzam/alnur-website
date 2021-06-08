@@ -140,6 +140,15 @@ section .container {
 
 section .logo {
   padding-bottom: 48px;
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+
+section .logo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 150ms ease-in;
+  transition: all 150ms ease-in;
 }
 
 section .title {
